@@ -261,6 +261,7 @@
             android:layout_marginBottom="14dp"
             android:background="@drawable/circle_signout"
             android:padding="25px"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/textView26"
             app:layout_constraintEnd_toEndOf="@+id/textView26"
             app:srcCompat="@drawable/save" />
@@ -273,6 +274,7 @@
             android:layout_marginBottom="14dp"
             android:background="@drawable/circle_signout"
             android:padding="25px"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/textView28"
             app:layout_constraintEnd_toEndOf="@+id/textView28"
             app:srcCompat="@drawable/save" />
@@ -285,7 +287,6 @@
             android:layout_marginBottom="14dp"
             android:background="@drawable/circle_signout"
             android:padding="25px"
-            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/textView26"
             app:layout_constraintEnd_toEndOf="@+id/textView26"
             app:srcCompat="@drawable/pencil" />
@@ -298,7 +299,6 @@
             android:layout_marginBottom="14dp"
             android:background="@drawable/circle_signout"
             android:padding="25px"
-            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/textView28"
             app:layout_constraintEnd_toEndOf="@+id/textView28"
             app:srcCompat="@drawable/pencil" />

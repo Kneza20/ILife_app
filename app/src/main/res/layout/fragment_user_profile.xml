@@ -284,6 +284,7 @@
             android:layout_marginBottom="14dp"
             android:background="@drawable/circle_signout"
             android:padding="25px"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/textView15"
             app:layout_constraintEnd_toEndOf="@+id/textView15"
             app:srcCompat="@drawable/save" />
@@ -292,11 +293,10 @@
             android:id="@+id/imgPencil"
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_marginEnd="14dp"
-            android:layout_marginBottom="14dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/circle_signout"
             android:padding="25px"
-            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/textView15"
             app:layout_constraintEnd_toEndOf="@+id/textView15"
             app:srcCompat="@drawable/pencil" />
