@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/SCREEN"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Login">
+
+        <ImageView
+            android:id="@+id/imgIconLogin"
+            android:layout_width="135dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_white" />
+
+        <TextView
+            android:id="@+id/tvLoginBackground"
+            style="@style/TVBG"
+            android:layout_width="350dp"
+            android:layout_height="730dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_rounded_tv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgIconLogin"
+            app:layout_constraintVertical_bias="0.508" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/key_login"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvLoginBackground"
+            app:layout_constraintStart_toStartOf="@+id/tvLoginBackground"
+            app:layout_constraintTop_toTopOf="@+id/tvLoginBackground" />
+
+        <TextView
+            android:id="@+id/tvNoacc"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/key_no_account_yet"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tvLoginBackground"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+        <TextView
+            android:id="@+id/tvCreateAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/link_blue"
+            android:text="@string/key_create_account"
+            android:textColor="@color/link_blue"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvNoacc"
+            app:layout_constraintEnd_toEndOf="@+id/tvLoginBackground"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toEndOf="@+id/tvNoacc" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="330dp"
+            android:layout_height="380dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvLoginBackground"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="@+id/tvLoginBackground"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumOpt">
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvEmailOpt"
+            style="@style/SuperTheme"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="10dp"
+            android:text="@string/key_email"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintEnd_toEndOf="@+id/tvLoginBackground"
+            app:layout_constraintHorizontal_bias="0.101"
+            app:layout_constraintStart_toStartOf="@+id/tvLoginBackground"
+            app:layout_constraintTop_toBottomOf="@+id/tvLogin"
+            app:layout_constraintVertical_bias="0.058" />
+
+        <TextView
+            android:id="@+id/tvPhoneNumOpt"
+            style="@style/SuperTheme"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="10dp"
+            android:text="@string/key_phone_number"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvLoginBackground"
+            app:layout_constraintHorizontal_bias="0.873"
+            app:layout_constraintStart_toStartOf="@+id/tvLoginBackground"
+            app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+
+        <ImageView
+            android:id="@+id/imgEmailico"
+            style="@style/IMG_EMAIL"
+            android:layout_width="15dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:rotationX="1"
+            app:layout_constraintEnd_toEndOf="@+id/tvEmailOpt"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="@+id/tvEmailOpt"
+            app:layout_constraintTop_toTopOf="@+id/tvEmailOpt" />
+
+        <ImageView
+            android:id="@+id/imgPhoneNumico"
+            style="@style/IMG_PHONE"
+            android:layout_width="15dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPhoneNumOpt"
+            app:layout_constraintEnd_toEndOf="@+id/tvPhoneNumOpt"
+            app:layout_constraintHorizontal_bias="0.016"
+            app:layout_constraintStart_toStartOf="@+id/tvPhoneNumOpt"
+            app:layout_constraintTop_toTopOf="@+id/tvPhoneNumOpt"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvOptEmail"
+            android:layout_width="140dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvEmailOpt"
+            app:layout_constraintStart_toStartOf="@+id/tvEmailOpt"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmailOpt" />
+
+        <TextView
+            android:id="@+id/tvOptPhone"
+            android:layout_width="140dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvPhoneNumOpt"
+            app:layout_constraintStart_toStartOf="@+id/tvPhoneNumOpt"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumOpt" />
+
+        <ImageButton
+            android:id="@+id/btnGoogle"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/imgbtn_style"
+            app:layout_constraintStart_toStartOf="@+id/tvLoginBackground"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            app:srcCompat="@drawable/search" />
+
+        <TextView
+            android:id="@+id/textView12"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/key_or_continue_with"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvLoginBackground"
+            app:layout_constraintStart_toStartOf="@+id/tvLoginBackground"
+            app:layout_constraintTop_toBottomOf="@+id/tvNoacc" />
+
+        <ImageButton
+            android:id="@+id/btnTwitter"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/imgbtn_style"
+            app:layout_constraintEnd_toEndOf="@+id/tvLoginBackground"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            app:srcCompat="@drawable/twitter" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+

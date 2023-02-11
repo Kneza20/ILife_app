@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TVBG"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneNumFragmentR">
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="302dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/link_blue"
+        android:textColor="@color/white"
+        android:text="@string/key_register"
+        app:layout_constraintEnd_toEndOf="@+id/etRepPasswR"
+        app:layout_constraintStart_toStartOf="@+id/etRepPasswR"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/key_checkbox"
+        app:layout_constraintEnd_toEndOf="@+id/etRepPasswR"
+        app:layout_constraintStart_toStartOf="@+id/etRepPasswR"
+        app:layout_constraintTop_toBottomOf="@+id/etNameR" />
+
+    <EditText
+        android:id="@+id/etRepPasswR"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_et"
+        android:ems="10"
+        android:hint="@string/key_repeat_your_password"
+        android:inputType="textPassword"
+        android:paddingLeft="30px"
+        app:layout_constraintStart_toStartOf="@+id/tvRepPasswR"
+        app:layout_constraintTop_toBottomOf="@+id/tvRepPasswR"
+        app:passwordToggleEnabled="true" />
+
+    <TextView
+        android:id="@+id/tvRepPasswR"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/key_repeat_password"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/etPasswR"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswR" />
+
+    <TextView
+        android:id="@+id/tvNamePNR"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/key_first_name_PNR"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/etRepPasswR"
+        app:layout_constraintTop_toBottomOf="@+id/etRepPasswR" />
+
+    <EditText
+        android:id="@+id/etNameR"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_et"
+        android:ems="10"
+        android:hint="@string/key_type_your_first_name_PNR"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvNamePNR"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamePNR" />
+
+    <TextView
+        android:id="@+id/tvSurnameR"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/key_last_name_PNR"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/etNameR"
+        app:layout_constraintTop_toBottomOf="@+id/etRepPasswR" />
+
+    <EditText
+        android:id="@+id/etSurnameR"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_et"
+        android:ems="10"
+        android:hint="@string/key_type_yoor_last_name_PNR"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvSurnameR"
+        app:layout_constraintTop_toBottomOf="@+id/tvSurnameR" />
+
+    <TextView
+        android:id="@+id/tvPhoneNumR"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/key_your_phone_number_R"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPhoneNumR"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_et"
+        android:ems="10"
+        android:hint="@string/key_type_your_phone_number_R"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvPhoneNumR"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumR" />
+
+    <EditText
+        android:id="@+id/etPasswR"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_et"
+        android:ems="10"
+        android:hint="@string/key_type_your_password_log"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvPasswordPNR"
+        app:layout_constraintTop_toBottomOf="@+id/tvPasswordPNR" />
+
+    <TextView
+        android:id="@+id/tvPasswordPNR"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/key_password_log"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/etPhoneNumR"
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneNumR" />
+
+    <ImageView
+        android:id="@+id/imgVisPassw"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/notvisible"
+        app:layout_constraintBottom_toBottomOf="@+id/etPasswR"
+        app:layout_constraintEnd_toEndOf="@+id/etPasswR"
+        app:layout_constraintTop_toTopOf="@+id/etPasswR" />
+
+    <ImageView
+        android:id="@+id/imgVisPasswRep"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/notvisible"
+        app:layout_constraintBottom_toBottomOf="@+id/etRepPasswR"
+        app:layout_constraintEnd_toEndOf="@+id/etRepPasswR"
+        app:layout_constraintTop_toTopOf="@+id/etRepPasswR" />
+</androidx.constraintlayout.widget.ConstraintLayout>

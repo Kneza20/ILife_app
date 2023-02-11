@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:background="@drawable/profile_back">
+
+    <TextView
+        android:id="@+id/tvDashboardBg"
+        android:layout_width="65dp"
+        android:layout_height="match_parent"
+        android:background="@color/dashboard_gray"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:translationZ="1px"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgUser"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/dashboard_icon_custom"
+        android:padding="30px"
+        android:visibility="invisible"
+        android:translationZ="1px"
+        app:layout_constraintEnd_toEndOf="@+id/tvDashboardBg"
+        app:layout_constraintStart_toStartOf="@+id/tvDashboardBg"
+        app:layout_constraintTop_toBottomOf="@+id/imgHamburgerDash"
+        app:srcCompat="@drawable/userdashboard" />
+
+    <ImageView
+        android:id="@+id/imgPay"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/dashboard_icon_custom"
+        android:padding="30px"
+        android:visibility="invisible"
+        android:translationZ="1px"
+        app:layout_constraintEnd_toEndOf="@+id/tvDashboardBg"
+        app:layout_constraintStart_toStartOf="@+id/tvDashboardBg"
+        app:layout_constraintTop_toBottomOf="@+id/imgUser"
+        app:srcCompat="@drawable/walletdashboard" />
+
+    <ImageView
+        android:id="@+id/imgReserved"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/dashboard_icon_custom"
+        android:padding="30px"
+        android:visibility="invisible"
+        android:translationZ="1px"
+        app:layout_constraintEnd_toEndOf="@+id/tvDashboardBg"
+        app:layout_constraintStart_toStartOf="@+id/tvDashboardBg"
+        app:layout_constraintTop_toBottomOf="@+id/imgPay"
+        app:srcCompat="@drawable/calendarcheck" />
+
+    <ImageView
+        android:id="@+id/imgHome"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/dashboard_icon_custom"
+        android:padding="30px"
+        android:visibility="invisible"
+        android:translationZ="1px"
+        app:layout_constraintEnd_toEndOf="@+id/tvDashboardBg"
+        app:layout_constraintStart_toStartOf="@+id/tvDashboardBg"
+        app:layout_constraintTop_toBottomOf="@+id/imgReserved"
+        app:srcCompat="@drawable/home" />
+
+    <FrameLayout
+        android:id="@+id/fragment_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/btnSignOut"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/circle_signout"
+        android:padding="25px"
+        android:translationZ="1px"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDashboardBg"
+        app:layout_constraintEnd_toEndOf="@+id/tvDashboardBg"
+        app:layout_constraintStart_toStartOf="@+id/tvDashboardBg"
+        app:srcCompat="@drawable/exit_dark" />
+
+    <ImageView
+        android:id="@+id/imgHamburgerDash"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/circle_signout"
+        android:padding="30px"
+        app:layout_constraintEnd_toEndOf="@+id/tvDashboardBg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDashboardBg"
+        app:srcCompat="@drawable/hambugermenu" />
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/circle_signout"
+        android:padding="30px"
+        android:translationZ="1px"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/tvDashboardBg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDashboardBg"
+        app:srcCompat="@drawable/close" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

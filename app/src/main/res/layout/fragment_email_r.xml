@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TVBG"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmailFragmentR"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="-219dp">
+
+    <TextView
+        android:id="@+id/tvEmailE"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/key_email_address_log"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPasswordER"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/key_password_log"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/etEmailE"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailE" />
+
+    <TextView
+        android:id="@+id/tvNameE"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/key_first_name_PNR"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/etRepPassw"
+        app:layout_constraintTop_toBottomOf="@+id/etRepPassw" />
+
+    <EditText
+        android:id="@+id/etNameE"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_et"
+        android:ems="10"
+        android:hint="@string/key_type_your_first_name_PNR"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvNameE"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameE" />
+
+    <TextView
+        android:id="@+id/tvSurnameE"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/key_last_name_PNR"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/etNameE"
+        app:layout_constraintTop_toBottomOf="@+id/etRepPassw" />
+
+    <EditText
+        android:id="@+id/etSurnameE"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_et"
+        android:ems="10"
+        android:hint="@string/key_type_yoor_last_name_PNR"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSurnameE"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvSurnameE"
+        app:layout_constraintTop_toBottomOf="@+id/tvSurnameE" />
+
+    <EditText
+        android:id="@+id/etEmailE"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_et"
+        android:ems="10"
+        android:hint="@string/key_type_your_email_log"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvEmailE"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailE" />
+
+    <EditText
+        android:id="@+id/etPasswordER"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_et"
+        android:ems="10"
+        android:hint="@string/key_type_your_password_log"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvPasswordER"
+        app:layout_constraintTop_toBottomOf="@+id/tvPasswordER"
+        app:passwordToggleEnabled="true" />
+
+
+    <TextView
+        android:id="@+id/tvRepPassw"
+        style="@style/TEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/key_repeat_password"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordER"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordER" />
+
+    <EditText
+        android:id="@+id/etRepPassw"
+        android:layout_width="328dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_et"
+        android:ems="10"
+        android:hint="@string/key_repeat_your_password"
+        android:inputType="textPassword"
+        android:paddingLeft="30px"
+        app:layout_constraintStart_toStartOf="@+id/tvRepPassw"
+        app:layout_constraintTop_toBottomOf="@+id/tvRepPassw"
+        app:passwordToggleEnabled="true" />
+
+    <CheckBox
+        android:id="@+id/CheckBox"
+        android:layout_width="327dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/key_checkbox"
+        app:layout_constraintEnd_toEndOf="@+id/etSurnameE"
+        app:layout_constraintStart_toStartOf="@+id/etNameE"
+        app:layout_constraintTop_toBottomOf="@+id/etNameE" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="302dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/link_blue"
+        android:textColor="@color/white"
+        android:text="@string/key_register"
+        app:layout_constraintEnd_toEndOf="@+id/etSurnameE"
+        app:layout_constraintStart_toStartOf="@+id/etNameE"
+        app:layout_constraintTop_toBottomOf="@+id/CheckBox" />
+
+    <ImageView
+        android:id="@+id/imgVisPass"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/notvisible"
+        app:layout_constraintBottom_toBottomOf="@+id/etPasswordER"
+        app:layout_constraintEnd_toEndOf="@+id/etPasswordER"
+        app:layout_constraintTop_toTopOf="@+id/etPasswordER" />
+
+    <ImageView
+        android:id="@+id/imgVisRep"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/notvisible"
+        app:layout_constraintBottom_toBottomOf="@+id/etRepPassw"
+        app:layout_constraintEnd_toEndOf="@+id/etRepPassw"
+        app:layout_constraintTop_toTopOf="@+id/etRepPassw" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

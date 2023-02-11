@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="92dp"
+    android:background="@drawable/reserved">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="135dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_white" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/key_book_everything_yeah_everything"
+            android:textColor="@color/ilife_white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PopupMenu" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="375dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="@string/key_no_more_waiting_in_lines_loads_of_notebooks_confussion_etc_it_sounds_like_a_dream_came_true_maybe_because_it_did"
+            android:textAlignment="center"
+            android:textColor="@color/ilife_white"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            style="@style/TVBG"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/searchbar_custom"
+            android:iconifiedByDefault="false"
+            android:padding="4dp"
+            android:queryHint="@string/query_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/TVBG"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/ilife_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+        <ImageView
+            android:id="@+id/imgHamburgerDash"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="showPopup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu" />
+
+        <ImageView
+            android:id="@+id/imgX"
+            android:layout_width="50dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/xmark" />
+
+        <TextView
+            android:id="@+id/PopupMenu"
+            style="@style/TVBG"
+            android:layout_width="190dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_popup"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/imgHamburgerDash"
+            app:layout_constraintTop_toBottomOf="@+id/imgHamburgerDash" />
+
+        <TextView
+            android:id="@+id/tvNameSurn"
+            style="@style/TEXT"
+            android:layout_width="132dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:elegantTextHeight="true"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/PopupMenu"
+            app:layout_constraintHorizontal_bias="0.642"
+            app:layout_constraintStart_toStartOf="@+id/PopupMenu"
+            app:layout_constraintTop_toTopOf="@+id/PopupMenu" />
+
+        <TextView
+            android:id="@+id/tvDashboard"
+            style="@style/TEXT"
+            android:layout_width="132dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/key_dashboard"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/tvNameSurn"
+            app:layout_constraintStart_toEndOf="@+id/imgProfile"
+            app:layout_constraintTop_toBottomOf="@+id/tvNameSurn" />
+
+        <TextView
+            android:id="@+id/tvPayment"
+            style="@style/TEXT"
+            android:layout_width="132dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/key_payment_and_wallet"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/tvDashboard"
+            app:layout_constraintStart_toStartOf="@+id/tvDashboard"
+            app:layout_constraintTop_toBottomOf="@+id/tvDashboard" />
+
+        <TextView
+            android:id="@+id/tvFAQ"
+            style="@style/TEXT"
+            android:layout_width="132dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/key_faq"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/tvPayment"
+            app:layout_constraintStart_toStartOf="@+id/tvPayment"
+            app:layout_constraintTop_toBottomOf="@+id/tvPayment" />
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="101dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/link_blue"
+            android:text="@string/key_sign_out"
+            android:textAlignment="viewEnd"
+            android:textSize="10sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/imgInfo"
+            app:layout_constraintTop_toBottomOf="@+id/tvFAQ"
+            style="@style/TEXT"/>
+
+        <ImageView
+            android:id="@+id/imgSIgnOut"
+            style="@style/IMG_SIGNOUT"
+            android:layout_width="16dp"
+            android:layout_height="15dp"
+            android:translationZ="2dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/btnSignOut"
+            app:layout_constraintEnd_toEndOf="@+id/btnSignOut"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toStartOf="@+id/btnSignOut"
+            app:layout_constraintTop_toTopOf="@+id/btnSignOut"
+            app:layout_constraintVertical_bias="0.473" />
+
+        <ImageView
+            android:id="@+id/imgInfo"
+            style="@style/IMG_FAQ"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvFAQ"
+            app:layout_constraintEnd_toStartOf="@+id/tvFAQ"
+            app:layout_constraintTop_toTopOf="@+id/tvFAQ" />
+
+        <ImageView
+            android:id="@+id/imgPayment"
+            style="@style/IMG_PAYMENT"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPayment"
+            app:layout_constraintEnd_toStartOf="@+id/tvPayment"
+            app:layout_constraintTop_toTopOf="@+id/tvPayment" />
+
+        <ImageView
+            android:id="@+id/imgDashboard"
+            style="@style/IMG_DASHBOARD"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDashboard"
+            app:layout_constraintEnd_toStartOf="@+id/tvDashboard"
+            app:layout_constraintTop_toTopOf="@+id/tvDashboard" />
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvNameSurn"
+            app:layout_constraintEnd_toStartOf="@+id/tvNameSurn"
+            app:layout_constraintTop_toTopOf="@+id/tvNameSurn" />
+
+        <TextView
+            android:id="@+id/tvUnderline"
+            android:layout_width="190dp"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/tvDashboard"
+            app:layout_constraintEnd_toEndOf="@+id/PopupMenu"
+            app:layout_constraintStart_toStartOf="@+id/PopupMenu"
+            app:layout_constraintTop_toBottomOf="@+id/tvNameSurn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

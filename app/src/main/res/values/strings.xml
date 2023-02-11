@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">ILife</string>
+    <string name="key_login">Login</string>
+    <string name="key_no_account_yet">No account yet?</string>
+    <string name="key_forgot_password">Forgot password?</string>
+    <string name="key_create_account">Create account</string>
+    <string name="key_register">Sign up</string>
+    <string name="key_recovery">Recovery</string>
+    <string name="key_btn">Search</string>
+    <string name="key_search_by_email">Search by Email:</string>
+    <string name="key_email">Email</string>
+    <string name="key_search_by_phone_number">Search by phone number:</string>
+    <string name="key_already_have_an_account">Already have an account?</string>
+    <string name="key_log_in">Log in</string>
+    <string name="key_email_address_log">Email address:</string>
+    <string name="key_type_your_email_log">Type your email</string>
+    <string name="key_type_your_password_log">Type your password</string>
+    <string name="key_password_log">Password:</string>
+    <string name="key_first_name_PNR">First name:</string>
+    <string name="key_type_your_first_name_PNR">Type your first name</string>
+    <string name="key_last_name_PNR">Last name:</string>
+    <string name="key_type_yoor_last_name_PNR">Type your last name</string>
+    <string name="key_your_phone_number_R">Your phone number:</string>
+    <string name="key_type_your_phone_number_R">Type your phone number</string>
+    <string name="key_phone_number">Phone number</string>
+    <string name="key_terms">Terms of Use</string>
+    <string name="key_privacy">Privacy Policy.</string>
+    <string name="key_checkbox">Email me exclusive Ilife promotions. I can unsubscribe at any time as stated in the Privacy Policy.</string>
+    <string name="key_firstpt">By signing up, I agree to Ilife</string>
+    <string name="key_secondpt">and</string>
+    <string name="key_repeat_your_password">Repeat your password</string>
+    <string name="key_repeat_password">Repeat password:</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="facebook_app_id" translatable="false">1234</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1234</string>
+    <string name="facebook_client_token" translatable="false">56789</string>
+    <string name="my_app_id" translatable="false">mystitchapp-qwern</string>
+    <string name="back4app_server_url" translatable="false">https://parseapi.back4app.com/</string>
+    <string name="back4app_app_id" translatable="false">PASTE_YOUR_APPLICATION_ID_HERE</string>
+    <string name="back4app_client_key" translatable="false">PASTE_YOUR_CLIENT_KEY_HERE</string>
+    <string name="key_or_continue_with">or continue with</string>
+    <string name="key_book_everything_yeah_everything">Book everything. Yeah, everything.</string>
+    <string name="key_no_more_waiting_in_lines_loads_of_notebooks_confussion_etc_it_sounds_like_a_dream_came_true_maybe_because_it_did">No more waiting in lines, loads of notebooks, confussion etc. It sounds like a dream came true, maybe because it did.</string>
+    <string name="key_dashboard">Dashboard</string>
+    <string name="key_payment_and_wallet">Payment and wallet</string>
+    <string name="key_faq">FAQ</string>
+    <string name="key_sign_out">Sign Out</string>
+    <string name="query_hint">Search...</string>
+    <string name="key_user_information">User Information</string>
+    <string name="key_become_a_seller">Become a seller</string>
+    <string name="key_do_you_want_to_become_a_seller">Do you want to become a seller?</string>
+    <string name="key_click_a_button_bellow_to_begin_earning_money_with_ilife">Click a button bellow to begin earning money with ILife!</string>
+    <string name="key_payment_information">Payment Information</string>
+    <string name="key_country">Country:</string>
+    <string name="key_state_province">State/Province:</string>
+    <string name="key_address">Address:</string>
+    <string name="key_postal_code">Postal code:</string>
+    <string name="key_card_information">Card Information</string>
+    <string name="key_holder_s_name">Holder\'s name:</string>
+    <string name="key_card_number">Card Number:</string>
+    <string name="key_ccv">CCV:</string>
+    <string name="key_terms_of_use">Terms of Use</string>
+    <string name="key_tou_firstp">By accessing or using the ILife website, mobile application, or any other services (collectively, the \"Services\"), you agree to be bound by the following terms of use (the \"Terms\"). If you do not agree to these Terms, you may not use the Services. Use of the Services The Services are intended for your personal, non-commercial use. You may not use the Services for any illegal or unauthorized purpose. You may not use the Services in a way that could damage, disable, overburden, or impair the Services or interfere with any other party\'s use of the Services. You may not attempt to gain unauthorized access to the Services, or any account, computer system, or network connected to the Services, through hacking, password mining, or any other means. You may not use the Services to transmit any spam, viruses, or other harmful code. Content on the Services The Services may contain text, graphics, images, music, software, audio, video, works of authorship of any kind, and information or other materials (collectively, \"Content\").</string>
+    <string name="key_tou_secondp">The Content is protected by copyright and other intellectual property laws, and is owned or controlled by Ilife or its licensors. You may not use the Content in any way that is not expressly authorized in these Terms. User-Generated Content The Services may allow you to submit, upload, publish, or otherwise make available Content (including, but not limited to, comments, reviews, images, videos, and personal information) (collectively, \"User-Generated Content\"). By submitting User-Generated Content, you grant Ilife a non-exclusive, transferable, sub-licensable, royalty-free, worldwide license to use, copy, modify, create derivative works based on, distribute, publicly display, publicly perform, and otherwise exploit in any manner such User-Generated Content in all formats and distribution channels now known or hereafter devised (including in connection with the Services and Ilife\'s business and on third-party sites and services), without further notice to or consent from you, and without the requirement of payment to you or any other person or entity. Accounts Certain features or services offered on or through the Services may require you to open an account (including setting up a Ilife ID and password).</string>
+    <string name="key_tou_thirdp">You are solely responsible for maintaining the confidentiality of your account information, including your password, and for any and all activity that occurs under your account. You agree to notify Ilife immediately of any unauthorized use of your account or password, or any other breach of security. You may be held liable for any losses incurred by Ilife or any other user of or visitor to the Services due to someone else using your Ilife ID, password or account as a result of your failing to keep account information secure and confidential. Third-Party Websites and Services The Services may contain links to third-party websites or services that are not owned or controlled by Ilife. Ilife has no control over and assumes no responsibility for the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that Ilife shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such websites or services. Termination Ilife may terminate or suspend your access to the Services at any time, for any reason, and without notice. Upon termination, your right to use the Services will immediately cease. Disclaimers The Services are provided \"AS IS\"</string>
+    <string name="key_privacy_policy">Privacy Policy</string>
+    <string name="key_pp_firstp">At Ilife, we take your privacy seriously. We understand that you trust us to handle your personal information, and we are committed to protecting it. This privacy policy (the \"Policy\") explains how we collect, use, and share your personal information, as well as your rights in relation to your personal information. Collection of Personal Information We may collect personal information from you when you interact with us, such as when you visit our website, create an account, make a purchase, or contact customer support. The types of personal information we may collect include your name, email address, postal address, telephone number, and payment information. Use of Personal Information We use your personal information to provide and improve our products and services, to communicate with you, and to comply with legal obligations. For example, we may use your personal information to: process your orders and deliver the products you have purchased; send you promotional materials and updates on our products and services; respond to your customer service inquiries or requests; detect and prevent fraud or other illegal activities; comply with applicable laws and regulations. Sharing of Personal Information We may share your personal information with third parties in the following circumstances: with our service providers and partners, such as payment processors and shipping companies, to fulfill your orders and provide our services; with law enforcement or other government agencies, as required by law or to protect our rights and the rights of others; with other companies in the event of a merger or acquisition.</string>
+    <string name="key_pp_secondp">Your Rights: You have certain rights in relation to your personal information, including: the right to access your personal information; the right to request the correction or deletion of your personal information; the right to object to the processing of your personal information; the right to request that we restrict the processing of your personal information; the right to receive your personal information in a portable format; the right to withdraw your consent to the processing of your personal information. We will respond to your requests in accordance with applicable laws. Changes to This Policy We may update this Policy from time to time to reflect changes to our practices or to comply with legal requirements. We will notify you of any material changes to this Policy by posting the new Policy on our website. Contact Us If you have any questions or concerns about this Policy or our handling of your personal information, please contact us at privacy@ilife.com.</string>
+    <string name="key_tabname">Name</string>
+    <string name="key_tabdate">Date</string>
+    <string name="key_tabtime">Time</string>
+    <string name="key_tabprice">Price</string>
+</resources>

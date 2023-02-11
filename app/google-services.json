@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "346737662814",
+    "firebase_url": "https://ilife-app-2bb0c-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ilife-app-2bb0c",
+    "storage_bucket": "ilife-app-2bb0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346737662814:android:7aa301190c2e182640cdcf",
+        "android_client_info": {
+          "package_name": "com.example.ilife_app_design"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346737662814-60pqblm9787nd9olqc40mef6vrpr77tr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQqdSSU5owYXcmCy6dgbFZcexRPz4A97s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346737662814-60pqblm9787nd9olqc40mef6vrpr77tr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

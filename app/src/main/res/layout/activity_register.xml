@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="160dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/SCREEN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Register">
+
+        <ImageView
+            android:id="@+id/imgIconRegister"
+            android:layout_width="135dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_white" />
+
+        <TextView
+            android:id="@+id/tvRegisterBackground"
+
+            style="@style/TVBG"
+            android:layout_width="365dp"
+            android:layout_height="1050dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_rounded_tv"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgIconRegister" />
+
+        <TextView
+            android:id="@+id/tvRegister"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/key_register"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvRegisterBackground"
+            app:layout_constraintStart_toStartOf="@+id/tvRegisterBackground"
+            app:layout_constraintTop_toTopOf="@+id/tvRegisterBackground" />
+
+        <FrameLayout
+            android:id="@+id/frameLayoutR"
+            android:layout_width="345dp"
+            android:layout_height="650dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvRegisterBackground"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="@+id/tvRegisterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumReg">
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvEmailReg"
+            style="@style/TEXT"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="10dp"
+            android:text="@string/key_email"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvRegisterBackground"
+            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintStart_toStartOf="@+id/tvRegisterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/tvRegister" />
+
+        <TextView
+            android:id="@+id/tvPhoneNumReg"
+            style="@style/TEXT"
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="10dp"
+            android:text="@string/key_phone_number"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvRegisterBackground"
+            app:layout_constraintHorizontal_bias="0.857"
+            app:layout_constraintStart_toStartOf="@+id/tvRegisterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/tvRegister" />
+
+        <TextView
+            android:id="@+id/tvHaveAcc"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/key_already_have_an_account"
+            app:layout_constraintEnd_toEndOf="@+id/tvRegisterBackground"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="@+id/tvRegisterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/btnGoogle" />
+
+        <TextView
+            android:id="@+id/tvLogintoAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/key_log_in"
+            android:textColor="@color/link_blue"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvHaveAcc"
+            app:layout_constraintStart_toEndOf="@+id/tvHaveAcc" />
+
+        <ImageView
+            style="@style/IMG_EMAIL"
+            android:layout_width="15dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvEmailReg"
+            app:layout_constraintEnd_toEndOf="@+id/tvEmailReg"
+            app:layout_constraintHorizontal_bias="0.107"
+            app:layout_constraintStart_toStartOf="@+id/tvEmailReg"
+            app:layout_constraintTop_toTopOf="@+id/tvEmailReg"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            style="@style/IMG_PHONE"
+            android:layout_width="15dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPhoneNumReg"
+            app:layout_constraintEnd_toEndOf="@+id/tvPhoneNumReg"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvPhoneNumReg"
+            app:layout_constraintTop_toTopOf="@+id/tvPhoneNumReg"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvRegOptE"
+            android:layout_width="140dp"
+            android:layout_height="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvEmailReg"
+            app:layout_constraintStart_toStartOf="@+id/tvEmailReg"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmailReg" />
+
+        <TextView
+            android:id="@+id/tvRegOptP"
+            android:layout_width="140dp"
+            android:layout_height="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvPhoneNumReg"
+            app:layout_constraintStart_toStartOf="@+id/tvPhoneNumReg"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumReg" />
+
+        <TextView
+            android:id="@+id/tvAgree"
+            style="@style/TEXT"
+            android:layout_width="313dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvRegisterBackground"
+            app:layout_constraintStart_toStartOf="@+id/tvRegisterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayoutR" />
+
+        <ImageButton
+            android:id="@+id/btnGoogle"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="24dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/imgbtn_style"
+            app:layout_constraintStart_toStartOf="@+id/tvRegisterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/tvContinue"
+            app:srcCompat="@drawable/search" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/key_firstpt"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/tvAgree"
+            app:layout_constraintTop_toTopOf="@+id/tvAgree" />
+
+        <TextView
+            android:id="@+id/tvTerms"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="@string/key_terms"
+            android:textColor="@color/link_blue"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/tvAgree" />
+
+        <TextView
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/key_secondpt"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvPrivacy"
+            app:layout_constraintHorizontal_bias="0.952"
+            app:layout_constraintStart_toStartOf="@+id/tvAgree"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tvPrivacy"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/key_privacy"
+            android:textColor="@color/link_blue"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvAgree"
+            app:layout_constraintHorizontal_bias="0.598"
+            app:layout_constraintStart_toStartOf="@+id/tvAgree"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/tvContinue"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/key_or_continue_with"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvRegisterBackground"
+            app:layout_constraintStart_toStartOf="@+id/tvRegisterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/tvAgree" />
+
+        <ImageButton
+            android:id="@+id/btnTwitter"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="75dp"
+            android:background="@drawable/imgbtn_style"
+            app:layout_constraintEnd_toEndOf="@+id/tvRegisterBackground"
+            app:layout_constraintTop_toBottomOf="@+id/tvContinue"
+            app:srcCompat="@drawable/twitter" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
