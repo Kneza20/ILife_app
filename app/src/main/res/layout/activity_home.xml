@@ -238,7 +238,8 @@
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/tvNameSurn"
             app:layout_constraintEnd_toStartOf="@+id/tvNameSurn"
-            app:layout_constraintTop_toTopOf="@+id/tvNameSurn" />
+            app:layout_constraintTop_toTopOf="@+id/tvNameSurn"
+            app:srcCompat="@drawable/user"/>
 
         <TextView
             android:id="@+id/tvUnderline"
