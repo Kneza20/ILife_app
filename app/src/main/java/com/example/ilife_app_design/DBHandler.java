@@ -46,4 +46,40 @@ public class DBHandler extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
+
+    void addUser(String name, String surname, String email, String password){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+
+        cv.put(NAME_COL, name);
+        cv.put(SURNAME_COL, surname);
+        cv.put(EMAIL_COL, email);
+        cv.put(PASSWORD_COL, password);
+        long result = db.insert(TABLE_NAME, null, cv);
+        if (result == -1){
+            Toast.makeText(context, "Something went wrong", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(context, "Success", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public Boolean checkEmail(String email){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM users WHERE name = ? ", new String[] {email});
+        if (cursor.getCount() > 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public Boolean checkEmailPassword(String email, String password){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM users WHERE email = ? AND password = ? ", new String[] {email, password});
+        if (cursor.getCount() > 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
