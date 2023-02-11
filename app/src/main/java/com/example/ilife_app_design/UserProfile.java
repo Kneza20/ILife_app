@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,8 +34,14 @@ public class UserProfile extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_user_profile, container, false);
 
+        DatabaseManager dbManager = new DatabaseManager(getActivity());
         DBHandler dbHandler = new DBHandler(getActivity());
         SQLiteDatabase db = dbHandler.getReadableDatabase();
+        try {
+            dbManager.open();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
 
         googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         tvNameField = (TextView) view.findViewById(R.id.tvNameField);
@@ -46,12 +53,23 @@ public class UserProfile extends Fragment {
         imgSave = (ImageView) view.findViewById(R.id.imgSave);
         imgPencil = (ImageView) view.findViewById(R.id.imgPencil);
 
-        String name = tvNameField.getText().toString();
-        String surname = etUserSurname.getText().toString();
-        String email = etUserMail.getText().toString();
-        String password = etUserPassw.getText().toString();
+        Cursor cursor = dbManager.fetch();
+        if (cursor.moveToFirst()){
+            do {
+                String id = cursor.getString(cursor.getColumnIndex(DBHandler.ID_COL));
+                String name = cursor.getString(cursor.getColumnIndex(DBHandler.NAME_COL));
+                String surname = cursor.getString(cursor.getColumnIndex(DBHandler.SURNAME_COL));
+                String email = cursor.getString(cursor.getColumnIndex(DBHandler.EMAIL_COL));
+                String password = cursor.getString(cursor.getColumnIndex(DBHandler.PASSWORD_COL));
+                Log.i("DATABASE_TAG", "I have read ID: " + id + " Name: " + name + " Surname: " + surname + " Email: " + email + " Password: " + password);
 
-
+                tvNameField.setText(name + " " + surname);
+                etUserName.setText(name);
+                etUserSurname.setText(surname);
+                etUserMail.setText(email);
+                etUserPassw.setText(password);
+            }while (cursor.moveToNext());
+        }
 
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(getContext());
         if (acct != null){

@@ -4,8 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -51,6 +55,29 @@ public class  Home extends AppCompatActivity{
         imgSignOut = (ImageView) findViewById(R.id.imgSIgnOut);
         imgProfile = (ImageView) findViewById(R.id.imgProfile);
         tvUnderline = (TextView) findViewById(R.id.tvUnderline);
+
+        DatabaseManager dbManager = new DatabaseManager(this);
+        DBHandler dbHandler = new DBHandler(this);
+        SQLiteDatabase db = dbHandler.getReadableDatabase();
+        try {
+            dbManager.open();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
+        Cursor cursor = dbManager.fetch();
+        if (cursor.moveToFirst()){
+            do {
+                @SuppressLint("Range") String id = cursor.getString(cursor.getColumnIndex(DBHandler.ID_COL));
+                @SuppressLint("Range") String name = cursor.getString(cursor.getColumnIndex(DBHandler.NAME_COL));
+                @SuppressLint("Range") String surname = cursor.getString(cursor.getColumnIndex(DBHandler.SURNAME_COL));
+                @SuppressLint("Range") String email = cursor.getString(cursor.getColumnIndex(DBHandler.EMAIL_COL));
+                @SuppressLint("Range") String password = cursor.getString(cursor.getColumnIndex(DBHandler.PASSWORD_COL));
+                Log.i("DATABASE_TAG", "I have read ID: " + id + " Name: " + name + " Surname: " + surname + " Email: " + email + " Password: " + password);
+
+                tvNameSurn.setText(name + " " + surname);
+            }while (cursor.moveToNext());
+        }
 
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
         if (acct != null){
