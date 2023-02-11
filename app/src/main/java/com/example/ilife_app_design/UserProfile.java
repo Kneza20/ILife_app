@@ -25,7 +25,8 @@ import com.squareup.picasso.Picasso;
 
 public class UserProfile extends Fragment {
 
-    TextView tvNameField, etUserName, etUserSurname, etUserMail, etUserPassw;;
+    TextView tvNameField, etUserName, etUserSurname, etUserMail, etUserPassw;
+    EditText etChangeEmail, etChangePassword;
     ImageView imgProf, imgSave, imgPencil;
     GoogleSignInOptions googleSignInOptions;
     @SuppressLint("Range")
@@ -52,6 +53,8 @@ public class UserProfile extends Fragment {
         etUserPassw = (TextView) view.findViewById(R.id.tvUserPassw);
         imgSave = (ImageView) view.findViewById(R.id.imgSave);
         imgPencil = (ImageView) view.findViewById(R.id.imgPencil);
+        etChangeEmail = (EditText) view.findViewById(R.id.etChangeEmail);
+        etChangePassword = (EditText) view.findViewById(R.id.etChangePassword);
 
         Cursor cursor = dbManager.fetch();
         if (cursor.moveToFirst()){
@@ -88,6 +91,12 @@ public class UserProfile extends Fragment {
             public void onClick(View view) {
                 imgPencil.setVisibility(imgPencil.VISIBLE);
                 imgSave.setVisibility(imgSave.INVISIBLE);
+                etUserName.setVisibility(etUserName.VISIBLE);
+                etUserSurname.setVisibility(etUserSurname.VISIBLE);
+                etUserMail.setVisibility(etUserMail.VISIBLE);
+                etUserPassw.setVisibility(etUserPassw.VISIBLE);
+                etChangeEmail.setVisibility(etChangeEmail.INVISIBLE);
+                etChangePassword.setVisibility(etChangePassword.INVISIBLE);
             }
         });
 
@@ -96,6 +105,12 @@ public class UserProfile extends Fragment {
             public void onClick(View view) {
                 imgPencil.setVisibility(imgPencil.INVISIBLE);
                 imgSave.setVisibility(imgSave.VISIBLE);
+                etUserName.setVisibility(etUserName.INVISIBLE);
+                etUserSurname.setVisibility(etUserSurname.INVISIBLE);
+                etUserMail.setVisibility(etUserMail.INVISIBLE);
+                etUserPassw.setVisibility(etUserPassw.INVISIBLE);
+                etChangeEmail.setVisibility(etChangeEmail.VISIBLE);
+                etChangePassword.setVisibility(etChangePassword.VISIBLE);
             }
         });
 
