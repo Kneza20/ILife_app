@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,9 +27,10 @@ import com.squareup.picasso.Picasso;
 public class UserProfile extends Fragment {
 
     TextView tvNameField, etUserName, etUserSurname, etUserMail, etUserPassw;
-    EditText etChangeEmail, etChangePassword;
+    EditText etChangeName, etChangeSurname, etChangeEmail, etChangePassword;
     ImageView imgProf, imgSave, imgPencil;
     GoogleSignInOptions googleSignInOptions;
+    HorizontalScrollView horizontalScrollView, horizontalScrollViewET;
     @SuppressLint("Range")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -53,8 +55,12 @@ public class UserProfile extends Fragment {
         etUserPassw = (TextView) view.findViewById(R.id.tvUserPassw);
         imgSave = (ImageView) view.findViewById(R.id.imgSave);
         imgPencil = (ImageView) view.findViewById(R.id.imgPencil);
+        etChangeName = (EditText) view.findViewById(R.id.etChangeName);
+        etChangeSurname = (EditText) view.findViewById(R.id.etChangeSurname);
         etChangeEmail = (EditText) view.findViewById(R.id.etChangeEmail);
         etChangePassword = (EditText) view.findViewById(R.id.etChangePassword);
+        horizontalScrollView = (HorizontalScrollView) view.findViewById(R.id.horizontalScrollView);
+        horizontalScrollViewET = (HorizontalScrollView) view.findViewById(R.id.horizontalScrollViewET);
 
         Cursor cursor = dbManager.fetch();
         if (cursor.moveToFirst()){
@@ -95,8 +101,14 @@ public class UserProfile extends Fragment {
                 etUserSurname.setVisibility(etUserSurname.VISIBLE);
                 etUserMail.setVisibility(etUserMail.VISIBLE);
                 etUserPassw.setVisibility(etUserPassw.VISIBLE);
+                etChangeName.setVisibility(etChangeName.INVISIBLE);
+                etChangeSurname.setVisibility(etChangeSurname.INVISIBLE);
+                etChangeName.setVisibility(etChangeName.VISIBLE);
+                etChangeSurname.setVisibility(etChangeSurname.VISIBLE);
                 etChangeEmail.setVisibility(etChangeEmail.INVISIBLE);
                 etChangePassword.setVisibility(etChangePassword.INVISIBLE);
+                horizontalScrollView.setVisibility(horizontalScrollView.VISIBLE);
+                horizontalScrollViewET.setVisibility(horizontalScrollViewET.INVISIBLE);
             }
         });
 
@@ -111,6 +123,8 @@ public class UserProfile extends Fragment {
                 etUserPassw.setVisibility(etUserPassw.INVISIBLE);
                 etChangeEmail.setVisibility(etChangeEmail.VISIBLE);
                 etChangePassword.setVisibility(etChangePassword.VISIBLE);
+                horizontalScrollView.setVisibility(horizontalScrollView.INVISIBLE);
+                horizontalScrollViewET.setVisibility(horizontalScrollViewET.VISIBLE);
             }
         });
 
