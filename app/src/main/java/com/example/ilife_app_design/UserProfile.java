@@ -1,5 +1,9 @@
 package com.example.ilife_app_design;
 
+import android.annotation.SuppressLint;
+import android.content.ContentValues;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -22,10 +27,14 @@ public class UserProfile extends Fragment {
     TextView tvNameField, etUserName, etUserSurname, etUserMail, etUserPassw;;
     ImageView imgProf, imgSave, imgPencil;
     GoogleSignInOptions googleSignInOptions;
+    @SuppressLint("Range")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_user_profile, container, false);
+
+        DBHandler dbHandler = new DBHandler(getActivity());
+        SQLiteDatabase db = dbHandler.getReadableDatabase();
 
         googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         tvNameField = (TextView) view.findViewById(R.id.tvNameField);
@@ -36,6 +45,13 @@ public class UserProfile extends Fragment {
         etUserPassw = (TextView) view.findViewById(R.id.tvUserPassw);
         imgSave = (ImageView) view.findViewById(R.id.imgSave);
         imgPencil = (ImageView) view.findViewById(R.id.imgPencil);
+
+        String name = tvNameField.getText().toString();
+        String surname = etUserSurname.getText().toString();
+        String email = etUserMail.getText().toString();
+        String password = etUserPassw.getText().toString();
+
+
 
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(getContext());
         if (acct != null){
