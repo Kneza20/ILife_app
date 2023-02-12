@@ -74,4 +74,16 @@
     <string name="key_tabtime">Time</string>
     <string name="key_tabprice">Price</string>
     <string name="key_btnview">View</string>
+    <string name="key_1_what_is_ilife">1. What is ILife?</string>
+    <string name="key_firstq">Ilife is a booking company that provides a platform for users to book appointments with various businesses, such as restaurants, dental clinics, and more.</string>
+    <string name="key_2">2. What types of businesses can I book through Ilife?</string>
+    <string name="key_2q">You can book appointments with various businesses, including restaurants, dental clinics, beauty salons, and more. The selection of businesses will vary depending on your location.</string>
+    <string name="key_3">3. How do I book an appointment through Ilife?</string>
+    <string name="key_3q">To book an appointment through Ilife, simply go to the Ilife website, search for the business you wish to book with, select the date and time that works best for you, and follow the instructions to complete the booking process.</string>
+    <string name="key_4">4. Can I make same-day bookings through Ilife?</string>
+    <string name="key_4q">Yes, Ilife provides the option to make same-day bookings, subject to availability.</string>
+    <string name="key_5">5. What happens if I need to cancel or reschedule my appointment?</string>
+    <string name="key_5q">If you need to cancel or reschedule your appointment, you can do so through the Ilife platform. The cancellation policy for each business may vary, so it is important to review the details before confirming your booking.</string>
+    <string name="key_6">6. Is there a fee for using Ilife?</string>
+    <string name="key_6q">There may be a fee for using Ilife, depending on the business you are booking with. It is important to review the details and any applicable fees before confirming your booking.</string>
 </resources>

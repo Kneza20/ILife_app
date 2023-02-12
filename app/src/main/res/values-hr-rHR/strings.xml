@@ -65,4 +65,16 @@
     <string name="key_tabtime">Vrijeme</string>
     <string name="key_tabprice">Cijena</string>
     <string name="key_btnview">Pogledaj</string>
+    <string name="key_1_what_is_ilife">1. Što je ILife?</string>
+    <string name="key_firstq">ILife je tvrtka za rezervacije koja korisnicima pruža platformu za rezerviranje termina kod raznih tvrtki, poput restorana, stomatoloških klinika i više.</string>
+    <string name="key_2">2. Koje vrste poslova mogu rezervirati putem ILife?</string>
+    <string name="key_2q">Možete rezervirati termine za razne tvrtke, uključujući restorane, stomatološke klinike, kozmetičke salone i još mnogo toga. Izbor tvrtki razlikovat će se ovisno o vašoj lokaciji.</string>
+    <string name="key_3">" 3. Kako mogu rezervirati termin putem ILife?"</string>
+    <string name="key_3q">Kako biste rezervirali termin putem ILife, jednostavno idite na web stranicu ILife, potražite tvrtku kod koje želite rezervirati, odaberite datum i vrijeme koji vam najviše odgovaraju i slijedite upute za dovršetak postupka rezervacije.</string>
+    <string name="key_4">4. Mogu li izvršiti rezervacije istog dana putem ILife?</string>
+    <string name="key_4q">" Da, ILife nudi mogućnost rezerviranja istog dana, ovisno o dostupnosti."</string>
+    <string name="key_5">5. Što se događa ako trebam otkazati ili pomaknuti svoj termin?</string>
+    <string name="key_5q">Ako trebate otkazati ili pomaknuti svoj termin, to možete učiniti putem ILife platforme. Politika otkazivanja za svaku tvrtku može se razlikovati, stoga je važno pregledati detalje prije potvrde rezervacije.</string>
+    <string name="key_6">" 6. Postoji li naknada za korištenje ILife?"</string>
+    <string name="key_6q">Može postojati naknada za korištenje ILife, ovisno o tvrtki kod koje rezervirate. Važno je pregledati detalje i sve primjenjive naknade prije potvrde rezervacije.</string>
 </resources>
