@@ -56,4 +56,16 @@
     <style name="IMG_SIGNOUT">
         <item name="android:background">@drawable/signoutdark</item>
     </style>
+
+    <style name="USER_PROF_BG">
+        <item name="android:background">@drawable/dark_bg</item>
+    </style>
+
+    <style name="HEADER_ROW">
+        <item name="android:background">@color/header_color</item>
+    </style>
+
+    <style name="REG_ROW">
+        <item name="android:background">@color/regular_row</item>
+    </style>
 </resources>

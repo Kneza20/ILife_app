@@ -240,7 +240,7 @@
             android:layout_marginBottom="128dp"
             app:layout_constraintBottom_toBottomOf="@+id/bg1"
             app:layout_constraintStart_toStartOf="@+id/bg1"
-            app:srcCompat="@drawable/userbg" />
+            app:srcCompat="@drawable/blob" />
 
         <TextView
             android:id="@+id/tvUserName"
@@ -290,17 +290,6 @@
             android:layout_height="108dp"
             app:layout_constraintStart_toStartOf="@+id/bg2"
             app:layout_constraintTop_toBottomOf="@+id/bg2" />
-
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="359dp"
-            android:layout_height="311dp"
-            android:layout_marginEnd="104dp"
-            android:layout_marginBottom="97dp"
-            android:rotation="90"
-            app:layout_constraintBottom_toBottomOf="@+id/bg2"
-            app:layout_constraintEnd_toEndOf="@+id/bg2"
-            app:srcCompat="@drawable/blob3" />
 
         <ImageView
             android:id="@+id/imgSave"
@@ -374,6 +363,16 @@
             app:layout_constraintEnd_toEndOf="@+id/tvUserName"
             app:layout_constraintStart_toStartOf="@+id/tvUserName"
             app:layout_constraintTop_toTopOf="@+id/tvUserName" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="263dp"
+            android:layout_height="277dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bg2"
+            app:layout_constraintStart_toStartOf="@+id/bg2"
+            app:layout_constraintTop_toTopOf="@+id/bg2"
+            app:srcCompat="@drawable/blobmbe" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

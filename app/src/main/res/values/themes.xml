@@ -61,6 +61,18 @@
         <item name="android:background">@drawable/signoutlight</item>
     </style>
 
+    <style name="USER_PROF_BG">
+        <item name="android:background">@drawable/profile_back</item>
+    </style>
+
+    <style name="HEADER_ROW">
+        <item name="android:background">@color/link_blue</item>
+    </style>
+
+    <style name="REG_ROW">
+        <item name="android:background">@color/ilife_white</item>
+    </style>
+
     <style name="Theme.Ilife_app_design.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

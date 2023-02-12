@@ -14,22 +14,22 @@
 
         <TextView
             android:id="@+id/textView26"
+            style="@style/PROF_BG"
             android:layout_width="340dp"
             android:layout_height="330dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="92dp"
-            style="@style/PROF_BG"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView27"
+            style="TEXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/key_payment_information"
-            style="TEXT"
             android:textSize="20sp"
             android:textStyle="bold"
             android:translationZ="1px"
@@ -38,11 +38,11 @@
 
         <TextView
             android:id="@+id/textView29"
+            style="TEXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:text="@string/key_country"
-            style="TEXT"
             android:textSize="16sp"
             android:translationZ="1px"
             app:layout_constraintStart_toStartOf="@+id/textView27"
@@ -50,46 +50,46 @@
 
         <TextView
             android:id="@+id/textView30"
+            style="TEXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="@string/key_state_province"
-            style="TEXT"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/textView29"
             app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
         <TextView
             android:id="@+id/textView31"
+            style="TEXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="@string/key_address"
-            style="TEXT"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/textView30"
             app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
         <TextView
             android:id="@+id/textView32"
+            style="TEXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="@string/key_postal_code"
-            style="TEXT"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/textView31"
             app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
         <TextView
             android:id="@+id/tvCountry"
+            style="TEXT"
             android:layout_width="180dp"
             android:layout_height="35dp"
             android:layout_marginStart="70dp"
             android:layout_marginEnd="8dp"
             android:background="@drawable/bg_profile_et_custom"
             android:gravity="center_vertical"
-            style="TEXT"
             app:layout_constraintBottom_toBottomOf="@+id/textView29"
             app:layout_constraintEnd_toEndOf="@+id/textView26"
             app:layout_constraintStart_toEndOf="@+id/textView29"
@@ -97,54 +97,54 @@
 
         <TextView
             android:id="@+id/tvStateProvince"
+            style="TEXT"
             android:layout_width="180dp"
             android:layout_height="35dp"
             android:background="@drawable/bg_profile_et_custom"
             android:gravity="center_vertical"
-            style="TEXT"
             app:layout_constraintBottom_toBottomOf="@+id/textView30"
             app:layout_constraintStart_toStartOf="@+id/tvCountry"
             app:layout_constraintTop_toTopOf="@+id/textView30" />
 
         <TextView
             android:id="@+id/tvAddress"
+            style="TEXT"
             android:layout_width="180dp"
             android:layout_height="35dp"
             android:background="@drawable/bg_profile_et_custom"
             android:gravity="center_vertical"
-            style="TEXT"
             app:layout_constraintBottom_toBottomOf="@+id/textView31"
             app:layout_constraintStart_toStartOf="@+id/tvStateProvince"
             app:layout_constraintTop_toTopOf="@+id/textView31" />
 
         <TextView
             android:id="@+id/tvPostal"
+            style="TEXT"
             android:layout_width="180dp"
             android:layout_height="35dp"
             android:background="@drawable/bg_profile_et_custom"
             android:gravity="center_vertical"
-            style="TEXT"
             app:layout_constraintBottom_toBottomOf="@+id/textView32"
             app:layout_constraintStart_toStartOf="@+id/tvAddress"
             app:layout_constraintTop_toTopOf="@+id/textView32" />
 
         <TextView
             android:id="@+id/textView28"
+            style="@style/PROF_BG"
             android:layout_width="340dp"
             android:layout_height="310dp"
             android:layout_marginTop="40dp"
-            style="@style/PROF_BG"
             app:layout_constraintStart_toStartOf="@+id/textView26"
             app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
         <TextView
             android:id="@+id/textView33"
+            style="TEXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/key_card_information"
-            style="TEXT"
             android:textSize="20sp"
             android:textStyle="bold"
             android:translationZ="1px"
@@ -153,11 +153,11 @@
 
         <TextView
             android:id="@+id/textView34"
+            style="TEXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:text="@string/key_holder_s_name"
-            style="TEXT"
             android:textSize="16sp"
             android:translationZ="1px"
             app:layout_constraintStart_toStartOf="@+id/textView33"
@@ -165,13 +165,13 @@
 
         <TextView
             android:id="@+id/tvHolderName"
+            style="TEXT"
             android:layout_width="180dp"
             android:layout_height="35dp"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="8dp"
             android:background="@drawable/bg_profile_et_custom"
             android:gravity="center_vertical"
-            style="TEXT"
             android:textSize="16sp"
             android:translationZ="1px"
             app:layout_constraintBottom_toBottomOf="@+id/textView34"
@@ -181,34 +181,34 @@
 
         <TextView
             android:id="@+id/textView36"
+            style="TEXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:text="@string/key_card_number"
-            style="TEXT"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/textView34"
             app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
         <TextView
             android:id="@+id/tvCardNum"
+            style="TEXT"
             android:layout_width="140dp"
             android:layout_height="35dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/bg_profile_et_custom"
             android:gravity="center_vertical"
-            style="TEXT"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/textView36"
             app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
         <TextView
             android:id="@+id/textView38"
+            style="TEXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
             android:text="@string/key_ccv"
-            style="TEXT"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView36"
             app:layout_constraintStart_toEndOf="@+id/textView36"
@@ -217,13 +217,13 @@
 
         <TextView
             android:id="@+id/tvCCV"
+            style="TEXT"
             android:layout_width="150dp"
             android:layout_height="35dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="8dp"
             android:background="@drawable/bg_profile_et_custom"
             android:gravity="center_vertical"
-            style="TEXT"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/textView28"
             app:layout_constraintStart_toStartOf="@+id/textView38"
@@ -235,27 +235,6 @@
             android:layout_height="132dp"
             app:layout_constraintStart_toStartOf="@+id/textView28"
             app:layout_constraintTop_toBottomOf="@+id/textView28" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="347dp"
-            android:layout_height="331dp"
-            android:layout_marginEnd="116dp"
-            android:layout_marginBottom="105dp"
-            android:rotation="128"
-            app:layout_constraintBottom_toBottomOf="@+id/textView28"
-            app:layout_constraintEnd_toEndOf="@+id/textView28"
-            app:srcCompat="@drawable/blob1" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="435dp"
-            android:layout_height="330dp"
-            android:layout_marginEnd="66dp"
-            android:layout_marginBottom="148dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView26"
-            app:layout_constraintEnd_toEndOf="@+id/textView26"
-            app:srcCompat="@drawable/blob2" />
 
         <ImageView
             android:id="@+id/imgSave3"
@@ -309,13 +288,13 @@
 
         <EditText
             android:id="@+id/etChangeCountry"
+            style="TEXT"
             android:layout_width="180dp"
             android:layout_height="35dp"
             android:background="@drawable/bg_profile_et_custom"
             android:ems="10"
             android:inputType="textPersonName"
             android:paddingLeft="20px"
-            style="TEXT"
             android:textSize="16sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/tvCountry"
@@ -325,13 +304,13 @@
 
         <EditText
             android:id="@+id/etChangeState"
+            style="TEXT"
             android:layout_width="180dp"
             android:layout_height="35dp"
             android:background="@drawable/bg_profile_et_custom"
             android:ems="10"
             android:inputType="textPersonName"
             android:paddingLeft="20px"
-            style="TEXT"
             android:textSize="16sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/tvStateProvince"
@@ -341,13 +320,13 @@
 
         <EditText
             android:id="@+id/etChangeAddress"
+            style="TEXT"
             android:layout_width="180dp"
             android:layout_height="35dp"
             android:background="@drawable/bg_profile_et_custom"
             android:ems="10"
             android:inputType="textPersonName"
             android:paddingLeft="20px"
-            style="TEXT"
             android:textSize="16sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/tvAddress"
@@ -357,13 +336,13 @@
 
         <EditText
             android:id="@+id/etChangePostal"
+            style="TEXT"
             android:layout_width="180dp"
             android:layout_height="35dp"
             android:background="@drawable/bg_profile_et_custom"
             android:ems="10"
             android:inputType="textPersonName"
             android:paddingLeft="20px"
-            style="TEXT"
             android:textSize="16sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/tvPostal"
@@ -373,13 +352,13 @@
 
         <EditText
             android:id="@+id/etChangeHolder"
+            style="TEXT"
             android:layout_width="180dp"
             android:layout_height="35dp"
             android:background="@drawable/bg_profile_et_custom"
             android:ems="10"
             android:inputType="textPersonName"
             android:paddingLeft="20px"
-            style="TEXT"
             android:textSize="16sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/tvHolderName"
@@ -389,13 +368,13 @@
 
         <EditText
             android:id="@+id/etChangeCardNUm"
+            style="TEXT"
             android:layout_width="140dp"
             android:layout_height="35dp"
             android:background="@drawable/bg_profile_et_custom"
             android:ems="10"
             android:inputType="textPersonName"
             android:paddingLeft="20px"
-            style="TEXT"
             android:textSize="16sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/tvCardNum"
@@ -405,19 +384,38 @@
 
         <EditText
             android:id="@+id/etChangeCCV"
+            style="TEXT"
             android:layout_width="150dp"
             android:layout_height="35dp"
             android:background="@drawable/bg_profile_et_custom"
             android:ems="10"
             android:inputType="textPersonName"
             android:paddingLeft="20px"
-            style="TEXT"
             android:textSize="16sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/tvCCV"
             app:layout_constraintEnd_toEndOf="@+id/tvCCV"
             app:layout_constraintStart_toStartOf="@+id/tvCCV"
             app:layout_constraintTop_toTopOf="@+id/tvCCV" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="335dp"
+            android:layout_height="391dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView28"
+            app:layout_constraintStart_toStartOf="@+id/textView28"
+            app:layout_constraintTop_toTopOf="@+id/textView28"
+            app:srcCompat="@drawable/blobulja3" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="286dp"
+            android:layout_height="275dp"
+            android:layout_marginEnd="59dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView26"
+            app:layout_constraintTop_toTopOf="@+id/textView26"
+            app:srcCompat="@drawable/blobic" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

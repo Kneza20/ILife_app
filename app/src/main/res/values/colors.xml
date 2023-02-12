@@ -16,4 +16,6 @@
     <color name="gray_profile_et">#31BFBFBF</color>
     <color name="error">#BA0000</color>
     <color name="table_border_gray">#5EBFBFBF</color>
+    <color name="header_color">#151515</color>
+    <color name="regular_row">#414141</color>
 </resources>
