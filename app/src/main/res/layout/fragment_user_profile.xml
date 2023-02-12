@@ -15,11 +15,11 @@
 
         <TextView
             android:id="@+id/textView14"
+            style="@style/PROF_BG"
             android:layout_width="233dp"
             android:layout_height="75dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="92dp"
-            style="TEXT"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

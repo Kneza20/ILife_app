@@ -15,4 +15,5 @@
     <color name="dashboard_gray">#DCDCDC</color>
     <color name="gray_profile_et">#31BFBFBF</color>
     <color name="error">#BA0000</color>
+    <color name="table_border_gray">#5EBFBFBF</color>
 </resources>

@@ -19,7 +19,6 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="92dp"
             style="@style/PROF_BG"
-            android:background="@drawable/profile_tv_bg_dark"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -135,7 +134,6 @@
             android:layout_height="310dp"
             android:layout_marginTop="40dp"
             style="@style/PROF_BG"
-            android:background="@drawable/profile_tv_bg_dark"
             app:layout_constraintStart_toStartOf="@+id/textView26"
             app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
@@ -243,7 +241,7 @@
             android:layout_width="347dp"
             android:layout_height="331dp"
             android:layout_marginEnd="116dp"
-            android:layout_marginBottom="104dp"
+            android:layout_marginBottom="105dp"
             android:rotation="128"
             app:layout_constraintBottom_toBottomOf="@+id/textView28"
             app:layout_constraintEnd_toEndOf="@+id/textView28"
@@ -254,7 +252,7 @@
             android:layout_width="435dp"
             android:layout_height="330dp"
             android:layout_marginEnd="66dp"
-            android:layout_marginBottom="147dp"
+            android:layout_marginBottom="148dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView26"
             app:layout_constraintEnd_toEndOf="@+id/textView26"
             app:srcCompat="@drawable/blob2" />
