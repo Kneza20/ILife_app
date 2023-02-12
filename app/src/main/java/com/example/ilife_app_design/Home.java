@@ -28,7 +28,8 @@ public class  Home extends AppCompatActivity{
 
     GoogleSignInOptions googleSignInOptions;
     GoogleSignInClient googleSignInClient;
-    ImageView imgHamburger, imgX, imgDashboard, imgPayment, imgInfo, imgSignOut, imgProfile;
+    ImageView imgHamburger, imgX, imgDashboard, imgPayment, imgInfo, imgSignOut, imgProfile,
+    imgStar1, imgStar2, imgStar3, imgStar4, imgStar5;
     TextView PopupMenu, tvNameSurn, tvDashboard, tvPayment, tvFAQ, tvUnderline;
     Button btnSignOut;
 
@@ -55,6 +56,11 @@ public class  Home extends AppCompatActivity{
         imgSignOut = (ImageView) findViewById(R.id.imgSIgnOut);
         imgProfile = (ImageView) findViewById(R.id.imgProfile);
         tvUnderline = (TextView) findViewById(R.id.tvUnderline);
+        imgStar1 = (ImageView) findViewById(R.id.imgStar1);
+        imgStar2 = (ImageView) findViewById(R.id.imgStar2);
+        imgStar3 = (ImageView) findViewById(R.id.imgStar3);
+        imgStar4 = (ImageView) findViewById(R.id.imgStar4);
+        imgStar5 = (ImageView) findViewById(R.id.imgStar5);
 
         DatabaseManager dbManager = new DatabaseManager(this);
         DBHandler dbHandler = new DBHandler(this);
@@ -64,6 +70,61 @@ public class  Home extends AppCompatActivity{
         } catch (Exception e){
             e.printStackTrace();
         }
+
+        imgStar1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imgStar1.setImageResource(R.drawable.staryellow);
+                imgStar2.setImageResource(R.drawable.star);
+                imgStar3.setImageResource(R.drawable.star);
+                imgStar4.setImageResource(R.drawable.star);
+                imgStar5.setImageResource(R.drawable.star);
+            }
+        });
+
+        imgStar2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imgStar1.setImageResource(R.drawable.staryellow);
+                imgStar2.setImageResource(R.drawable.staryellow);
+                imgStar3.setImageResource(R.drawable.star);
+                imgStar4.setImageResource(R.drawable.star);
+                imgStar5.setImageResource(R.drawable.star);
+            }
+        });
+
+        imgStar3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imgStar1.setImageResource(R.drawable.staryellow);
+                imgStar2.setImageResource(R.drawable.staryellow);
+                imgStar3.setImageResource(R.drawable.staryellow);
+                imgStar4.setImageResource(R.drawable.star);
+                imgStar5.setImageResource(R.drawable.star);
+            }
+        });
+
+        imgStar4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imgStar1.setImageResource(R.drawable.staryellow);
+                imgStar2.setImageResource(R.drawable.staryellow);
+                imgStar3.setImageResource(R.drawable.staryellow);
+                imgStar4.setImageResource(R.drawable.staryellow);
+                imgStar5.setImageResource(R.drawable.star);
+            }
+        });
+
+        imgStar5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imgStar1.setImageResource(R.drawable.staryellow);
+                imgStar2.setImageResource(R.drawable.staryellow);
+                imgStar3.setImageResource(R.drawable.staryellow);
+                imgStar4.setImageResource(R.drawable.staryellow);
+                imgStar5.setImageResource(R.drawable.staryellow);
+            }
+        });
 
         Cursor cursor = dbManager.fetch();
         if (cursor.moveToFirst()){

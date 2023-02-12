@@ -26,7 +26,7 @@ import com.google.android.gms.tasks.Task;
 public class Register extends AppCompatActivity {
 
     TextView tvEmailReg, tvPhoneNumReg, tvLogintoAcc, tvOptE, tvOptP, tvTerms, tvPrivacy;
-    ImageButton btnGoogle, btnTwitter;
+    ImageButton btnGoogle;
     GoogleSignInOptions googleSignInOptions;
     GoogleSignInClient googleSignInClient;
 
@@ -47,7 +47,6 @@ public class Register extends AppCompatActivity {
         googleSignInClient = GoogleSignIn.getClient(this, googleSignInOptions);
         tvTerms = (TextView) findViewById(R.id.tvTerms);
         tvPrivacy = (TextView) findViewById(R.id.tvPrivacy);
-        btnTwitter = (ImageButton) findViewById(R.id.btnTwitter);
 
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
         if (acct!=null){

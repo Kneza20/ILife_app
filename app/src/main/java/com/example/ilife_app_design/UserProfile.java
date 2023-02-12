@@ -109,6 +109,16 @@ public class UserProfile extends Fragment {
                 etChangePassword.setVisibility(etChangePassword.INVISIBLE);
                 horizontalScrollView.setVisibility(horizontalScrollView.VISIBLE);
                 horizontalScrollViewET.setVisibility(horizontalScrollViewET.INVISIBLE);
+                String changeName = etChangeName.getText().toString();
+                String changeSurname = etChangeSurname.getText().toString();
+                String changeEmail = etChangeEmail.getText().toString();
+                String changePassword = etChangePassword.getText().toString();
+
+                etUserName.setText(changeName);
+                etUserSurname.setText(changeSurname);
+                etUserMail.setText(changeEmail);
+                etUserPassw.setText(changePassword);
+                tvNameField.setText(changeName + " " + changeSurname);
             }
         });
 

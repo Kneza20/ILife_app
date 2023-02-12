@@ -38,6 +38,23 @@ public class Pay extends Fragment {
             public void onClick(View view) {
                 imgPencil3.setVisibility(imgPencil3.VISIBLE);
                 imgSave3.setVisibility(imgSave3.INVISIBLE);
+                tvCountry.setVisibility(tvCountry.VISIBLE);
+                tvStateProvince.setVisibility(tvStateProvince.VISIBLE);
+                tvAddress.setVisibility(tvAddress.VISIBLE);
+                tvPostal.setVisibility(tvPostal.VISIBLE);
+                etChangeCountry.setVisibility(etChangeCountry.INVISIBLE);
+                etChangeState.setVisibility(etChangeState.INVISIBLE);
+                etChangeAddress.setVisibility(etChangeAddress.INVISIBLE);
+                etChangePostal.setVisibility(etChangePostal.INVISIBLE);
+                String changeCountry = etChangeCountry.getText().toString();
+                String changeState = etChangeState.getText().toString();
+                String changeAddress = etChangeAddress.getText().toString();
+                String changePostal = etChangePostal.getText().toString();
+
+                tvCountry.setText(changeCountry);
+                tvStateProvince.setText(changeState);
+                tvAddress.setText(changeAddress);
+                tvPostal.setText(changePostal);
             }
         });
 
@@ -46,6 +63,14 @@ public class Pay extends Fragment {
             public void onClick(View view) {
                 imgPencil3.setVisibility(imgPencil3.INVISIBLE);
                 imgSave3.setVisibility(imgSave3.VISIBLE);
+                tvCountry.setVisibility(tvCountry.INVISIBLE);
+                tvStateProvince.setVisibility(tvStateProvince.INVISIBLE);
+                tvAddress.setVisibility(tvAddress.INVISIBLE);
+                tvPostal.setVisibility(tvPostal.INVISIBLE);
+                etChangeCountry.setVisibility(etChangeCountry.VISIBLE);
+                etChangeState.setVisibility(etChangeState.VISIBLE);
+                etChangeAddress.setVisibility(etChangeAddress.VISIBLE);
+                etChangePostal.setVisibility(etChangePostal.VISIBLE);
             }
         });
 
@@ -54,20 +79,19 @@ public class Pay extends Fragment {
             public void onClick(View view) {
                 imgPencil2.setVisibility(imgPencil2.VISIBLE);
                 imgSave2.setVisibility(imgSave2.INVISIBLE);
-                tvCountry.setVisibility(tvCountry.VISIBLE);
-                tvStateProvince.setVisibility(tvStateProvince.VISIBLE);
-                tvAddress.setVisibility(tvAddress.VISIBLE);
-                tvPostal.setVisibility(tvPostal.VISIBLE);
                 tvHolder.setVisibility(tvHolder.VISIBLE);
                 tvCardName.setVisibility(tvCardName.VISIBLE);
                 tvCCV.setVisibility(tvCCV.VISIBLE);
-                etChangeCountry.setVisibility(etChangeCountry.INVISIBLE);
-                etChangeState.setVisibility(etChangeState.INVISIBLE);
-                etChangeAddress.setVisibility(etChangeAddress.INVISIBLE);
-                etChangePostal.setVisibility(etChangePostal.INVISIBLE);
                 etChangeHolder.setVisibility(etChangeHolder.INVISIBLE);
                 etChangeCardNum.setVisibility(etChangeCardNum.INVISIBLE);
                 etChangeCCV.setVisibility(etChangeCCV.INVISIBLE);
+                String changeHolder = etChangeHolder.getText().toString();
+                String changeCardNum = etChangeCardNum.getText().toString();
+                String changeCCV = etChangeCCV.getText().toString();
+
+                tvHolder.setText(changeHolder);
+                tvCardName.setText(changeCardNum);
+                tvCCV.setText(changeCCV);
             }
         });
 
@@ -76,17 +100,9 @@ public class Pay extends Fragment {
             public void onClick(View view) {
                 imgPencil2.setVisibility(imgPencil2.INVISIBLE);
                 imgSave2.setVisibility(imgSave2.VISIBLE);
-                tvCountry.setVisibility(tvCountry.INVISIBLE);
-                tvStateProvince.setVisibility(tvStateProvince.INVISIBLE);
-                tvAddress.setVisibility(tvAddress.INVISIBLE);
-                tvPostal.setVisibility(tvPostal.INVISIBLE);
                 tvHolder.setVisibility(tvHolder.INVISIBLE);
                 tvCardName.setVisibility(tvCardName.INVISIBLE);
                 tvCCV.setVisibility(tvCCV.INVISIBLE);
-                etChangeCountry.setVisibility(etChangeCountry.VISIBLE);
-                etChangeState.setVisibility(etChangeState.VISIBLE);
-                etChangeAddress.setVisibility(etChangeAddress.VISIBLE);
-                etChangePostal.setVisibility(etChangePostal.VISIBLE);
                 etChangeHolder.setVisibility(etChangeHolder.VISIBLE);
                 etChangeCardNum.setVisibility(etChangeCardNum.VISIBLE);
                 etChangeCCV.setVisibility(etChangeCCV.VISIBLE);

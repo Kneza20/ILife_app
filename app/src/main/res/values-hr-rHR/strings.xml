@@ -64,4 +64,5 @@
     <string name="key_tabdate">Datum</string>
     <string name="key_tabtime">Vrijeme</string>
     <string name="key_tabprice">Cijena</string>
+    <string name="key_btnview">Pogledaj</string>
 </resources>

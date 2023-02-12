@@ -27,7 +27,7 @@ public class Login extends AppCompatActivity {
     TextView tvCreateAcc, tvForgotPassw, tvEmailOpt, tvPhoneNumOpt, tvLoginBackground, tvLogin, tvNoAcc, tvOptE, tvOptP;
     Button btnLogin;
     ImageView imgEmailico, imgPhoneNumico;
-    ImageButton btnGoogle, btnTwitter;
+    ImageButton btnGoogle;
     GoogleSignInOptions googleSignInOptions;
     GoogleSignInClient googleSignInClient;
 
@@ -53,7 +53,6 @@ public class Login extends AppCompatActivity {
         btnGoogle = (ImageButton) findViewById(R.id.btnGoogle);
         googleSignInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         googleSignInClient = GoogleSignIn.getClient(this, googleSignInOptions);
-        btnTwitter = (ImageButton) findViewById(R.id.btnTwitter);
 
         replaceFragment(new EmailFragment());
         tvOptE.setBackgroundResource(R.drawable.textview_border_visible);

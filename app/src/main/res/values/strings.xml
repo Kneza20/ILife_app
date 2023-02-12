@@ -73,4 +73,5 @@
     <string name="key_tabdate">Date</string>
     <string name="key_tabtime">Time</string>
     <string name="key_tabprice">Price</string>
+    <string name="key_btnview">View</string>
 </resources>

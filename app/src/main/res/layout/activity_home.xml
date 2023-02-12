@@ -72,18 +72,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-        <TextView
-            android:id="@+id/textView4"
-            style="@style/TVBG"
-            android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:layout_marginTop="50dp"
-            android:background="@color/ilife_white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/searchView" />
-
         <ImageView
             android:id="@+id/imgHamburgerDash"
             android:layout_width="50dp"
@@ -171,6 +159,7 @@
 
         <Button
             android:id="@+id/btnSignOut"
+            style="@style/TEXT"
             android:layout_width="101dp"
             android:layout_height="34dp"
             android:layout_marginTop="20dp"
@@ -180,8 +169,7 @@
             android:textSize="10sp"
             android:visibility="invisible"
             app:layout_constraintStart_toStartOf="@+id/imgInfo"
-            app:layout_constraintTop_toBottomOf="@+id/tvFAQ"
-            style="@style/TEXT"/>
+            app:layout_constraintTop_toBottomOf="@+id/tvFAQ" />
 
         <ImageView
             android:id="@+id/imgSIgnOut"
@@ -239,18 +227,174 @@
             app:layout_constraintBottom_toBottomOf="@+id/tvNameSurn"
             app:layout_constraintEnd_toStartOf="@+id/tvNameSurn"
             app:layout_constraintTop_toTopOf="@+id/tvNameSurn"
-            app:srcCompat="@drawable/user"/>
+            app:srcCompat="@drawable/user" />
 
         <TextView
             android:id="@+id/tvUnderline"
             android:layout_width="190dp"
             android:layout_height="2dp"
-            android:background="@color/black"
+            android:background="@color/text_gray"
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/tvDashboard"
             app:layout_constraintEnd_toEndOf="@+id/PopupMenu"
             app:layout_constraintStart_toStartOf="@+id/PopupMenu"
             app:layout_constraintTop_toBottomOf="@+id/tvNameSurn" />
+
+        <TextView
+            android:id="@+id/textView37"
+            style="@style/SCROLL_BG"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+        <TextView
+            android:id="@+id/tvService"
+            android:layout_width="300dp"
+            android:layout_height="500dp"
+            android:background="@drawable/bg_rounded_et"
+            style="@style/SCROLL_BG"
+            app:layout_constraintBottom_toBottomOf="@+id/textView37"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView37"
+            app:layout_constraintVertical_bias="0.51" />
+
+        <TextView
+            android:id="@+id/textView43"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Waelchi-Jakubowski"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvService"
+            app:layout_constraintTop_toTopOf="@+id/tvService" />
+
+        <TextView
+            android:id="@+id/tvOwner"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Patrizio Pimlett"
+            android:textColor="@color/text_gray"
+            app:layout_constraintStart_toStartOf="@+id/textView43"
+            app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="295dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvService"
+            app:layout_constraintStart_toStartOf="@+id/tvService"
+            app:layout_constraintTop_toBottomOf="@+id/tvOwner"
+            app:srcCompat="@drawable/waelchijakubowski" />
+
+        <TextView
+            android:id="@+id/tvEuro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="14.73€"
+            android:textColor="@color/price_green"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvService"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <TextView
+            android:id="@+id/tvPriceKn"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="111.06kn"
+            android:textColor="@color/text_gray"
+            app:layout_constraintStart_toStartOf="@+id/tvEuro"
+            app:layout_constraintTop_toBottomOf="@+id/tvEuro" />
+
+        <TextView
+            android:id="@+id/tvStreet"
+            style="@style/TEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="713 Homewood Road"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvService"
+            app:layout_constraintStart_toStartOf="@+id/tvService" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/link_blue"
+            android:text="@string/key_btnview"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvService"
+            app:layout_constraintEnd_toEndOf="@+id/tvService" />
+
+        <ImageView
+            android:id="@+id/imgStar1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="64dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvEuro"
+            app:layout_constraintStart_toEndOf="@+id/tvEuro"
+            app:layout_constraintTop_toTopOf="@+id/tvEuro"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imgStar2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgStar1"
+            app:layout_constraintStart_toEndOf="@+id/imgStar1"
+            app:layout_constraintTop_toTopOf="@+id/imgStar1"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imgStar3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgStar2"
+            app:layout_constraintStart_toEndOf="@+id/imgStar2"
+            app:layout_constraintTop_toTopOf="@+id/imgStar2"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imgStar4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgStar3"
+            app:layout_constraintStart_toEndOf="@+id/imgStar3"
+            app:layout_constraintTop_toTopOf="@+id/imgStar3"
+            app:srcCompat="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imgStar5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgStar4"
+            app:layout_constraintStart_toEndOf="@+id/imgStar4"
+            app:layout_constraintTop_toTopOf="@+id/imgStar4"
+            app:srcCompat="@drawable/star" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

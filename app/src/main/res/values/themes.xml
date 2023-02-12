@@ -33,6 +33,9 @@
     <style name="PROF_BG">
         <item name="android:background">@drawable/profile_tv_bg_white</item>
     </style>
+    <style name="SCROLL_BG">
+        <item name="android:background">@color/ilife_white</item>
+    </style>
     <style name="IMG_EMAIL">
         <item name="android:background">@drawable/envelopelight</item>
     </style>

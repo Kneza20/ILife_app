@@ -30,6 +30,9 @@
     <style name="PROF_BG">
         <item name="android:background">@drawable/profile_tv_bg_dark</item>
     </style>
+    <style name="SCROLL_BG">
+        <item name="android:background">@color/nardo_black</item>
+    </style>
     <style name="IMG_EMAIL">
         <item name="android:background">@drawable/envelopedark</item>
     </style>

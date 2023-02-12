@@ -171,9 +171,9 @@
             android:id="@+id/btnGoogle"
             android:layout_width="90dp"
             android:layout_height="60dp"
-            android:layout_marginStart="70dp"
             android:layout_marginTop="24dp"
             android:background="@drawable/imgbtn_style"
+            app:layout_constraintEnd_toEndOf="@+id/tvLoginBackground"
             app:layout_constraintStart_toStartOf="@+id/tvLoginBackground"
             app:layout_constraintTop_toBottomOf="@+id/textView12"
             app:srcCompat="@drawable/search" />
@@ -189,17 +189,6 @@
             app:layout_constraintEnd_toEndOf="@+id/tvLoginBackground"
             app:layout_constraintStart_toStartOf="@+id/tvLoginBackground"
             app:layout_constraintTop_toBottomOf="@+id/tvNoacc" />
-
-        <ImageButton
-            android:id="@+id/btnTwitter"
-            android:layout_width="90dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="70dp"
-            android:background="@drawable/imgbtn_style"
-            app:layout_constraintEnd_toEndOf="@+id/tvLoginBackground"
-            app:layout_constraintTop_toBottomOf="@+id/textView12"
-            app:srcCompat="@drawable/twitter" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
