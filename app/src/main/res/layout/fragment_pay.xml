@@ -303,5 +303,117 @@
             app:layout_constraintEnd_toEndOf="@+id/textView28"
             app:srcCompat="@drawable/pencil" />
 
+        <EditText
+            android:id="@+id/etChangeCountry"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_profile_et_custom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="20px"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCountry"
+            app:layout_constraintEnd_toEndOf="@+id/tvCountry"
+            app:layout_constraintStart_toStartOf="@+id/tvCountry"
+            app:layout_constraintTop_toTopOf="@+id/tvCountry" />
+
+        <EditText
+            android:id="@+id/etChangeState"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_profile_et_custom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="20px"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvStateProvince"
+            app:layout_constraintEnd_toEndOf="@+id/tvStateProvince"
+            app:layout_constraintStart_toStartOf="@+id/tvStateProvince"
+            app:layout_constraintTop_toTopOf="@+id/tvStateProvince" />
+
+        <EditText
+            android:id="@+id/etChangeAddress"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_profile_et_custom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="20px"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAddress"
+            app:layout_constraintEnd_toEndOf="@+id/tvAddress"
+            app:layout_constraintStart_toStartOf="@+id/tvAddress"
+            app:layout_constraintTop_toTopOf="@+id/tvAddress" />
+
+        <EditText
+            android:id="@+id/etChangePostal"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_profile_et_custom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="20px"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPostal"
+            app:layout_constraintEnd_toEndOf="@+id/tvPostal"
+            app:layout_constraintStart_toStartOf="@+id/tvPostal"
+            app:layout_constraintTop_toTopOf="@+id/tvPostal" />
+
+        <EditText
+            android:id="@+id/etChangeHolder"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_profile_et_custom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="20px"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvHolderName"
+            app:layout_constraintEnd_toEndOf="@+id/tvHolderName"
+            app:layout_constraintStart_toStartOf="@+id/tvHolderName"
+            app:layout_constraintTop_toTopOf="@+id/tvHolderName" />
+
+        <EditText
+            android:id="@+id/etChangeCardNUm"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_profile_et_custom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="20px"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCardNum"
+            app:layout_constraintEnd_toEndOf="@+id/tvCardNum"
+            app:layout_constraintStart_toStartOf="@+id/tvCardNum"
+            app:layout_constraintTop_toTopOf="@+id/tvCardNum" />
+
+        <EditText
+            android:id="@+id/etChangeCCV"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_profile_et_custom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingLeft="20px"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCCV"
+            app:layout_constraintEnd_toEndOf="@+id/tvCCV"
+            app:layout_constraintStart_toStartOf="@+id/tvCCV"
+            app:layout_constraintTop_toTopOf="@+id/tvCCV" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

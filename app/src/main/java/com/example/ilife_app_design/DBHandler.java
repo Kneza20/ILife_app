@@ -63,16 +63,6 @@ public class DBHandler extends SQLiteOpenHelper {
         }
     }
 
-    public Boolean checkEmail(String email){
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM users WHERE name = ? ", new String[] {email});
-        if (cursor.getCount() > 0){
-            return true;
-        } else {
-            return false;
-        }
-    }
-
     public Boolean checkEmailPassword(String email, String password){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM users WHERE email = ? AND password = ? ", new String[] {email, password});

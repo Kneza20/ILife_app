@@ -7,11 +7,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 public class Pay extends Fragment {
 
     ImageView imgSave3, imgPencil3, imgSave2, imgPencil2;
+    EditText etChangeCountry, etChangeState, etChangeAddress, etChangePostal, etChangeHolder, etChangeCardNum, etChangeCCV;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

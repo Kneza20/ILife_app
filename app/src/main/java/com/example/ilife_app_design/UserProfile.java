@@ -92,6 +92,8 @@ public class UserProfile extends Fragment {
             Picasso.get().load(acct.getPhotoUrl()).placeholder(R.drawable.user).into(imgProf);
         }
 
+        horizontalScrollView.setVisibility(horizontalScrollView.VISIBLE);
+        horizontalScrollViewET.setVisibility(horizontalScrollViewET.INVISIBLE);
         imgSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -103,8 +105,6 @@ public class UserProfile extends Fragment {
                 etUserPassw.setVisibility(etUserPassw.VISIBLE);
                 etChangeName.setVisibility(etChangeName.INVISIBLE);
                 etChangeSurname.setVisibility(etChangeSurname.INVISIBLE);
-                etChangeName.setVisibility(etChangeName.VISIBLE);
-                etChangeSurname.setVisibility(etChangeSurname.VISIBLE);
                 etChangeEmail.setVisibility(etChangeEmail.INVISIBLE);
                 etChangePassword.setVisibility(etChangePassword.INVISIBLE);
                 horizontalScrollView.setVisibility(horizontalScrollView.VISIBLE);
@@ -121,6 +121,8 @@ public class UserProfile extends Fragment {
                 etUserSurname.setVisibility(etUserSurname.INVISIBLE);
                 etUserMail.setVisibility(etUserMail.INVISIBLE);
                 etUserPassw.setVisibility(etUserPassw.INVISIBLE);
+                etChangeName.setVisibility(etChangeName.VISIBLE);
+                etChangeSurname.setVisibility(etChangeSurname.VISIBLE);
                 etChangeEmail.setVisibility(etChangeEmail.VISIBLE);
                 etChangePassword.setVisibility(etChangePassword.VISIBLE);
                 horizontalScrollView.setVisibility(horizontalScrollView.INVISIBLE);
