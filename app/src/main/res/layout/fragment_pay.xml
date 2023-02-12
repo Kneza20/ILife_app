@@ -18,7 +18,8 @@
             android:layout_height="330dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="92dp"
-            style="TVBG"
+            style="@style/PROF_BG"
+            android:background="@drawable/profile_tv_bg_dark"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -133,7 +134,8 @@
             android:layout_width="340dp"
             android:layout_height="310dp"
             android:layout_marginTop="40dp"
-            style="TVBG"
+            style="@style/PROF_BG"
+            android:background="@drawable/profile_tv_bg_dark"
             app:layout_constraintStart_toStartOf="@+id/textView26"
             app:layout_constraintTop_toBottomOf="@+id/textView26" />
 

@@ -46,11 +46,11 @@
             app:layout_constraintTop_toTopOf="@+id/textView14" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/bg1"
             android:layout_width="340dp"
             android:layout_height="330dp"
             android:layout_marginTop="12dp"
-            style="@style/TVBG"
+            style="@style/PROF_BG"
             app:layout_constraintStart_toStartOf="@+id/textView14"
             app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -65,8 +65,8 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:translationZ="1dp"
-            app:layout_constraintStart_toStartOf="@+id/textView15"
-            app:layout_constraintTop_toTopOf="@+id/textView15" />
+            app:layout_constraintStart_toStartOf="@+id/bg1"
+            app:layout_constraintTop_toTopOf="@+id/bg1" />
 
         <TextView
             android:id="@+id/textView17"
@@ -164,14 +164,14 @@
         </HorizontalScrollView>
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/bg2"
             android:layout_width="340dp"
             android:layout_height="280dp"
             android:layout_marginTop="40dp"
-            style="@style/TVBG"
+            style="@style/PROF_BG"
             android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/textView15"
-            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            app:layout_constraintStart_toStartOf="@+id/bg1"
+            app:layout_constraintTop_toBottomOf="@+id/bg1" />
 
         <TextView
             android:id="@+id/textView22"
@@ -184,8 +184,8 @@
             style="TEXT"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/textView21"
-            app:layout_constraintTop_toTopOf="@+id/textView21" />
+            app:layout_constraintStart_toStartOf="@+id/bg2"
+            app:layout_constraintTop_toTopOf="@+id/bg2" />
 
         <TextView
             android:id="@+id/textView23"
@@ -216,8 +216,8 @@
             android:layout_height="45dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="24dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView21"
-            app:layout_constraintEnd_toEndOf="@+id/textView21"
+            app:layout_constraintBottom_toBottomOf="@+id/bg2"
+            app:layout_constraintEnd_toEndOf="@+id/bg2"
             app:srcCompat="@drawable/circle_signout" />
 
         <TextView
@@ -238,8 +238,8 @@
             android:layout_width="228dp"
             android:layout_height="205dp"
             android:layout_marginBottom="128dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView15"
-            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintBottom_toBottomOf="@+id/bg1"
+            app:layout_constraintStart_toStartOf="@+id/bg1"
             app:srcCompat="@drawable/userbg" />
 
         <TextView
@@ -254,7 +254,7 @@
             style="TEXT"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView17"
-            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="@+id/bg1"
             app:layout_constraintStart_toEndOf="@+id/textView17"
             app:layout_constraintTop_toTopOf="@+id/textView17" />
 
@@ -288,8 +288,8 @@
             android:id="@+id/textView13"
             android:layout_width="309dp"
             android:layout_height="108dp"
-            app:layout_constraintStart_toStartOf="@+id/textView21"
-            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+            app:layout_constraintStart_toStartOf="@+id/bg2"
+            app:layout_constraintTop_toBottomOf="@+id/bg2" />
 
         <ImageView
             android:id="@+id/imageView10"
@@ -298,8 +298,8 @@
             android:layout_marginEnd="104dp"
             android:layout_marginBottom="97dp"
             android:rotation="90"
-            app:layout_constraintBottom_toBottomOf="@+id/textView21"
-            app:layout_constraintEnd_toEndOf="@+id/textView21"
+            app:layout_constraintBottom_toBottomOf="@+id/bg2"
+            app:layout_constraintEnd_toEndOf="@+id/bg2"
             app:srcCompat="@drawable/blob3" />
 
         <ImageView
@@ -311,8 +311,8 @@
             android:background="@drawable/circle_signout"
             android:padding="25px"
             android:visibility="invisible"
-            app:layout_constraintBottom_toBottomOf="@+id/textView15"
-            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintBottom_toBottomOf="@+id/bg1"
+            app:layout_constraintEnd_toEndOf="@+id/bg1"
             app:srcCompat="@drawable/save" />
 
         <ImageView
@@ -323,8 +323,8 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/circle_signout"
             android:padding="25px"
-            app:layout_constraintBottom_toBottomOf="@+id/textView15"
-            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintBottom_toBottomOf="@+id/bg1"
+            app:layout_constraintEnd_toEndOf="@+id/bg1"
             app:srcCompat="@drawable/pencil" />
 
         <EditText
